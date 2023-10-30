@@ -1,12 +1,11 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Product from "../components/Products";
+import { Navbar, Main, Products, Footer } from "../components";
 
 const Home = () => {
     return(
         <>
             <Navbar />
-            <Product />
+            <Main />
+            <Products />
             <Footer />
         </>
     );

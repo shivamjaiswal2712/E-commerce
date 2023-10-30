@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import Skeleton from "react-loading-skeleton";
  import { addCart } from "../redux/action";
 import { Link } from "react-router-dom";
-//  import "react-loading-skeleton/dist/Skeleton";
+ import "react-loading-skeleton/dist/skeleton.css";
 
 const Products = () => {
     const [data, setData] = useState([]);
