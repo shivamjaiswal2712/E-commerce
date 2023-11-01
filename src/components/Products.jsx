@@ -68,7 +68,7 @@ const Products = () => {
         setFilter(updatedList);
     }
 
-    const showProducts = () => {
+    const ShowProducts = () => {
         return(
             <>
                 <div className="buttons text-center py-5">
@@ -83,7 +83,7 @@ const Products = () => {
                     return(
                         <div id={product.id} key={product.key} className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
                             <div className="card text-center h-100" key={product.id}>
-                                <img className="card-img-top p-3" src="" alt="" height={300}/>
+                                <img className="card-img-top p-3" src={product.image} alt="Card" height={300}/>
                                 <div className="card-body">
                                     <h5 className="card-title">{product.title.substring(0, 12)}...</h5>
                                     <p className="card-text">{product.description.substring(0, 90)}...</p>
@@ -114,7 +114,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    {loading ? <Loading /> : <showProducts />}
+                    {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
         </>
