@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import Skeleton from "react-loading-skeleton";
  import { addCart } from "../redux/action";
@@ -10,7 +10,7 @@ const Products = () => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
 
-    let componentMounted = true;
+    let componentMounted = useRef(true);
     
     const dispatch = useDispatch();
     const addProduct = (product) => {
@@ -28,7 +28,8 @@ const Products = () => {
             }
 
             return () => {
-                componentMounted = false;
+                // componentMounted = false;
+                void (componentMounted.current = false);
             };
         };
 
