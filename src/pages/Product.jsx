@@ -66,7 +66,7 @@ const Product = () => {
                 <div className="container my-5 py-2">
                     <div className="row">
                         <div className="col-md-6 col-sm-12 py-3">
-                            <img className="img-fluid" src="" alt="" width="400px" height="400px" />
+                            <img className="img-fluid" src={product.image} alt={product.title} width="400px" height="400px" />
                         </div>
 
                         <div className="col-md-6 col-md-6 py-5">
@@ -122,7 +122,7 @@ const Product = () => {
                         {similarProducts.map((item) => {
                             return(
                                 <div className="card mx-4 text-center" key={item.id}>
-                                    <img className="card-img-top p-3" src="" alt="" height={300} width={300} />
+                                    <img className="card-img-top p-3" src={item.image} alt="Card" height={300} width={300} />
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             {item.title.substring(0, 15)}...

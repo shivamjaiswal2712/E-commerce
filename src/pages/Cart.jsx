@@ -55,7 +55,7 @@ const Cart = () => {
                                                     <div className="row d-flex align-items-center">
                                                         <div className="col-lg-3 col-md-12">
                                                             <div className="bg-image rounded" data-mdb-ripple-color="light">
-                                                                <img src="" alt="" width={100} height={75} />
+                                                                <img src={item.image} alt={item.title} width={100} height={75} />
                                                             </div>
                                                         </div>
 

@@ -76,7 +76,7 @@ const Checkout = () => {
                                                 <label for="firstName" className="form-label">
                                                     First name
                                                 </label>
-                                                <input type="text" className="form-control" id="firstname" placeholder="" required />
+                                                <input type="text" className="form-control" id="firstname" placeholder="First Name" required />
                                                 <div className="invalid-feedback">
                                                     Valid first name is required.
                                                 </div>
@@ -86,7 +86,7 @@ const Checkout = () => {
                                                 <label for="lastName" className="form-label">
                                                     Last name
                                                 </label>
-                                                <input type="text" className="form-control" id="lastname" placeholder="" required />
+                                                <input type="text" className="form-control" id="lastname" placeholder="Last Name" required />
                                                 <div className="invalid-feedback">
                                                     Valid last name is required.
                                                 </div>

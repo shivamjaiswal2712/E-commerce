@@ -17,7 +17,7 @@ const ContactPage = () => {
 
                             <div className="form my-3">
                                 <label for="Email">Email</label>
-                                <input type="email" className="form-control" id="email" placeholder="name@example.com" />
+                                <input type="email" className="form-control" id="email" placeholder="name@mail.com" />
                             </div>
 
                             <div className="form my-3">
